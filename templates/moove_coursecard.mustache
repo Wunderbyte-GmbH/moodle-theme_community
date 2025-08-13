@@ -1,22 +1,23 @@
 <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="{{{id}}}" data-category-id="{{category}}">
     <a href="{{config.wwwroot}}/course/view.php?id={{{id}}}" tabindex="-1">
-        {{^image}}
+    {{^image}}
         <div class="card-header">
             <h3 class="my-0">{{{fullname}}}</h3>
         </div>
-        {{/image}}
-        {{#image}}
+    {{/image}}
+    {{#image}}
+        <div class="card-header">
+            <h3 class="my-0">{{{fullname}}}</h3>
+        </div>
         <div class="card-header p-0">
             <img src="{{image}}" class="img-fluid w-100">
         </div>
-        {{/image}}
+    {{/image}}
     </a>
     <div class="card-body course-info-container">
-
         <div class="customfields">
             {{{customfields}}}
         </div>
-
         <div class="course-summary">
             {{{summary}}}
         </div>
